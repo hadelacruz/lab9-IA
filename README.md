@@ -100,8 +100,3 @@ Formalmente, sabemos que B y E son **marginalmente independientes**: `P(B, E) = 
 
 Esto ocurre porque A es un **nodo colisionador** (collider) en la estructura del grafo. Al condicionar sobre un colisionador, se abre un camino de influencia entre sus padres que antes estaba bloqueado. Este es un resultado fundamental de la teoría de d-separación de Pearl.
 
-### Implicación práctica
-
-Este efecto tiene consecuencias directas en sistemas de diagnóstico. En un sistema de detección de fraudes, por ejemplo, si una transacción sospechosa (efecto) puede explicarse por un viaje al extranjero previamente registrado (causa 1), la probabilidad de fraude real (causa 2) disminuye aunque fraude y viaje sean eventos a priori independientes. Los sistemas que ignoran este efecto sobreestiman la probabilidad de causas concurrentes y producen falsas alarmas.
-
-En conclusión: **la independencia marginal no implica independencia condicional**, y la Red Bayesiana captura este patrón de razonamiento de forma natural y matemáticamente precisa.
